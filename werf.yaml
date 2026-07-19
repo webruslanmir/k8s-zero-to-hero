@@ -11,7 +11,7 @@ git:
   to: /
 shell:
   install:
-  - apt update
-  - apt install -y curl vim python3 python3-pip
+    install:
+  - apt update && apt install -y curl vim python3 python3-pip && rm -rf /var/lib/apt/lists/*
   setup:
   - python3 -c "print('Hello, world')"
