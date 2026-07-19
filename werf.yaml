@@ -12,6 +12,6 @@ git:
 shell:
   install:
   - apt update
-  - apt install -y curl vim
+  - apt install -y curl vim echo python3 python3-pip
   setup:
-  - echo "Hello, world"
+  - python3 -c "print('Hello, world')"
