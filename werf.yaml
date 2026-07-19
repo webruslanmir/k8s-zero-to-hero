@@ -1,5 +1,9 @@
 project: k8s-zero-to-hero
 configVersion: 1
+build:
+  platform: 
+  - 'linux/amd64'
+  - 'linux/arm64'
 ---
 image: ubuntu-test
 from: ubuntu:22.04
